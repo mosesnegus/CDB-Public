@@ -7,12 +7,16 @@
     <meta name="description" content="FakeBlog">
     <meta name="author" content="John Doe" >
     <title>FakeBlog</title>
+    <style>
+        table, th, td {
+            border:1px solid black;
+        }
+    </style>
 </head>
 <body>
     <div>
         <h1>Blog for Learning HTML5</h1>
     </div>
-  
 <a>
     <img src="https://upload.wikimedia.org/wikipedia/commons/6/61/HTML5_logo_and_wordmark.svg" alt="HTML5 logo">
 </a> <P>Image Source: Wikipedia</P><br>
@@ -26,37 +30,81 @@
     <li>HTML 4</li>
     <li>HTML 5</li>
 </ul>
+<p>This blog is buit in HTML here are some examples of tags</p>
+<p>This is a table example</p>
+<table style="width:100%">
+    <tr>
+        <th>Code Language</th>
+        <th>Version</th>
+    </tr>
+<tr>
+    <td>HTML</td>
+    <td>Ver.1</td>
+</tr>
+<tr>
+    <td>HTML</td>
+    <td>Ver.2</td>
+</tr>
+<tr>
+    <td>HTML</td>
+    <td>Ver.3</td>
+</tr>
+<tr>
+    <td>HTML</td>
+    <td>Ver.4</td>
+</tr>
+<tr>
+    <td>HTML</td>
+    <td>Ver.5</td>
+</tr>
+</table>   
 
+<p>This is thead example</p>
 <table>
-    <a>This blog is built in html here are some tags</a><br>
-    <p>This is table tag</p>
-    <thead>
-        <p>This is thead tag</p>
-        <td>
-            <p>This is td tag</p>
-            <tbody>
-                <p>This is tbody tag</p>
-                <tr>
-                    <p>This is tr tag</p>
-                </tr>
-            </tbody>
-        </td>
-    </thead>
+<thead>
+    <tr>
+        <th>Code Language</th>
+        <th>Version</th>
+    </tr>
+</thead>
+<tbody>
+    <tr>
+        <th>HTML</th>
+        <th>Ver.1</th>
+    </tr>
+    <tr>
+        <th>HTML</th>
+        <th>Ver.2</th>
+    </tr>
+    <tr>
+        <th>HTML</th>
+        <th>Ver.3</th>
+    </tr>
+    <tr>
+        <th>HTML</th>
+        <th>Ver.4</th>
+    </tr>
+    <tr>
+        <th>HTML</th>
+        <th>Ver.5</th>
+    </tr>
+</tbody>
 </table>
-</a>
 
-  <form>
-    <label type="text"> Please take this short survey</label><br><br>
+<form>
+    <label> Please take this short survey</label><br><br>
+    <label for="full_name">Full Name:</label>
+    <input type="text" id="full_name" name="full_name"><br><br>
     <label for="email">Email</label>
     <input type="email" id="email" name="email"><br><br>
 
-    <input type="radio" id="other" name="yes" value="yes">
-    <label for="yes">Yes, please send me lots of emails</label>
+    <input type="radio" id="other_yes" name="yes" value="yes">
+    <label for="other_yes">Yes, please send me lots of emails</label>
 
-    <input type="radio" id="other" name="no" value="no">
-    <label for="no">No, please do not send me emails</label><br><br>
+    <input type="radio" id="other_no" name="no" value="no">
+    <label for="other_no">No, please do not send me emails</label><br><br>
 
-    <label for="hear_about_us">How did you hear about us?</label><br>
+    <label>How did you hear about us?</label><br>
     <input type="checkbox" id="hear_about_us1" name="hear_about_us1" value="facebook">
     <label for="hear_about_us1">Facebook</label><br>
     <input type="checkbox" id="hear_about_us2" name="hear_about_us2" value="Newspaper">
@@ -65,6 +113,6 @@
     <label for="hear_about_us3">Referral</label><br> <br>
 
     <input type="submit">
-  </form>
+</form>
 </body>
 </html>
